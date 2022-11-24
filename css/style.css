@@ -1,0 +1,13 @@
+.sec1{
+background-color: rgba(7, 202, 7, 0.178);
+    height: 6rem;
+}
+
+.cont-mess{
+z-index: 1;
+color: white;
+border: 3px solid red;
+position: absolute;
+top: 13%;
+left: 6%;
+}
