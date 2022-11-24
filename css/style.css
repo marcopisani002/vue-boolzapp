@@ -12,6 +12,7 @@ top: 10%;
 align-items: center;
 left: 7%;
 max-height: 90vh;
+
 }
 .img-icon{
     width:50px;
@@ -22,5 +23,28 @@ max-height: 90vh;
 }
 .mar-neg-dx{
     margin-left:6rem;
+    
+}
+.main-container {
+    background-image: url("../img/mine.jpg");
+    width: 100%;
+    flex-grow: 1;
+    overflow: auto;
+    padding-top: 5rem;
+
+}
+.bottom-navbar {
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    height: 80px;
+    
+   overflow: hidden;
+  
+ 
+}
+.mar-neg-dx2{
+    margin-left:45rem;
     
 }
