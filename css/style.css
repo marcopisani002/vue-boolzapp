@@ -8,6 +8,19 @@ z-index: 1;
 color: white;
 border: 3px solid red;
 position: absolute;
-top: 13%;
-left: 6%;
+top: 10%;
+align-items: center;
+left: 7%;
+max-height: 90vh;
+}
+.img-icon{
+    width:50px;
+}
+.mar-neg-sx{
+    margin-left: -2rem;
+    
+}
+.mar-neg-dx{
+    margin-left:6rem;
+    
 }
