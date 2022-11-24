@@ -23,6 +23,12 @@ height: 90vh;
     margin-left:6rem;
     
 }
+.middle-section {
+    flex-grow: 1;
+    overflow: auto;
+    padding-top: 1rem;
+}
+
 .main-container {
     background-image: url("../img/mine.jpg");
     width: 100%;
@@ -63,12 +69,14 @@ height: 90vh;
 .insert-message-container .input-container {
     flex-basis: 80%;
     margin: 0 auto;
+  
 }
 
 .insert-message-container input {
     width: 100%;
     padding: 10px 0 10px 15px;
     border: none;
+    border-radius: 8px;
 }
 
 .area-chat .name-foto-container .icons-container i {
