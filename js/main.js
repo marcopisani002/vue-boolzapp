@@ -93,24 +93,21 @@ const app = createApp({
                     ],
                   },
             ],
-            selectedUser: -1,
+            selectedUserIndex: 0,
 
         };
 
     },
 
     methods: {
-     /* selectChat(index) {
+      selectChat(index) {
         console.log('set active');
-        this.selectedUser = index;
+        this.selectedUserIndex = index;
        
-    },*/
+    },
 
     },
 
 
-    beforeMount () {
-      this.selectedUser = this.contatti[0]
-    }
 
 }).mount('#app');
