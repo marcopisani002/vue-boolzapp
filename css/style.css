@@ -15,9 +15,9 @@
 
 .main-container {
     background: white;
-    height: 90vh;
+    height: 80vh;
     position: relative;
-    top: 5vh;
+    top: 10vh;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
@@ -52,10 +52,14 @@ flex-direction: column;
     flex-direction: column;
     row-gap: 1rem;
     align-items: start;
+    overflow: auto;
   }
+  .time-container {
+    text-align: end;
+}
 .contact-message{
 
-    padding: 1rem;
+    padding: 2px 16px;
     background: white;
     max-width: 60%;
     min-width: 30%;

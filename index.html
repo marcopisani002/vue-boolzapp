@@ -125,7 +125,9 @@
                             v-for="messageObj in contatti[selectedUserIndex].messages">
                             {{messageObj.message}}
                         
-
+                            <div class="time-container">
+                                <small class="fw-lighter">{{messageObj.date}}</small>
+                            </div>
 
                         </div>
 
@@ -135,10 +137,10 @@
                         <div class="icons-container text-center">
                             <i class="fa-regular fa-face-smile"></i>
                         </div>
-                        <div class="input-container text-center ">
-                            <input type="text" name="" id="" placeholder="Scrivi un messaggio...">
+                        <div class="input-container text-center "  >
+                            <input v-model="newMessage.message" type="text" name="" id="" placeholder="Scrivi un messaggio..."  v-on:keyup.enter="inputEnter(selectedUserIndex)  " >
                         </div>
-                        <div class="icons-container text-center">
+                        <div class="icons-container text-center "  >
                             <i class="fa-solid fa-microphone"></i>
                         </div>
                     </div>
