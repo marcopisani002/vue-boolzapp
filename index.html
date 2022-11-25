@@ -79,93 +79,37 @@
                         <!-- SEARCH chat section  -->
                         <section class="bg-white">
                             <form class="d-flex" role="search">
-                                <input class="form-control border-0 " type="search" placeholder="cerca o inizia una chat"
-                                    aria-label="Search">
+                                <input class="form-control border-0 " type="search"
+                                    placeholder="cerca o inizia una chat" aria-label="Search">
                                 <button class="btn bg-light  " type="button"><i
                                         class="fa-solid fa-magnifying-glass"></i></button>
-                                        
+
                             </form>
-                          
+
                         </section>
                         <!-- contact's chat section  -->
                         <section class=" d-flex flex-column">
-                            <div class=" p-2 middle-section  " v-for="(amici,i)in contatti">
+                            <div class=" p-2 middle-section mt-2 " v-for="(amici, index) in contatti">
 
-                                <ul class="mar-neg-sx mt-2 ">
+                                <div class="d-flex mb-3 ">
 
-                                    <li class="list-unstyled d-flex">
-                                        <img class="img-icon rounded-circle" src="img/avatar_1.jpg" alt="">
-                                        <h6 class="fw-bold ms-2  text-black">Michele
-                                            <br><span class="text-black fw-lighter">Ultimo messaggio inviato</span>
-                                        </h6>
-
-                                    </li>
-                                    <hr class="text-secondary">
-                                    <li class="list-unstyled d-flex">
-                                        <img class="img-icon rounded-circle" src="img/avatar_2.jpg" alt="">
-                                        <h6 class="fw-bold ms-2 text-black">Roberto
-                                            <br><span class="text-black fw-lighter">Ultimo messaggio inviato</span>
-                                        </h6>
-
-                                    </li>
-                                    <hr class="text-secondary">
-                                    <li class="list-unstyled d-flex">
-                                        <img class="img-icon rounded-circle" src="img/avatar_3.jpg" alt="">
-                                        <h6 class="fw-bold ms-2 text-black ">Fabio
-                                            <br><span class="text-black fw-lighter">Ultimo messaggio inviato</span>
-                                        </h6>
-
-                                    </li>
-                                    <hr class="text-secondary">
-                                    <li class="list-unstyled d-flex">
-                                        <img class="img-icon rounded-circle" src="img/avatar_4.jpg" alt="">
-                                        <h6 class="fw-bold ms-2 text-black ">Samuele
-                                            <br><span class="text-black fw-lighter">Ultimo messaggio inviato</span>
-                                        </h6>
-
-                                    </li>
-                                    <hr class="text-secondary">
-                                    <li class="list-unstyled d-flex">
-                                        <img class="img-icon rounded-circle" src="img/avatar_5.jpg" alt="">
-                                        <h6 class="fw-bold ms-2 text-black ">Alex B.
-                                            <br><span class="text-black fw-lighter">Ultimo messaggio inviato</span>
-                                        </h6>
-
-                                    </li>
-                                    <hr class="text-secondary">
-                                    <li class="list-unstyled d-flex">
-                                        <img class="img-icon rounded-circle" src="img/avatar_6.jpg" alt="">
-                                        <h6 class="fw-bold ms-2 text-black">Francesca
-                                            <br><span class="text-black fw-lighter">Ultimo messaggio inviato</span>
-                                        </h6>
-
-                                    </li>
-                                    <hr class="text-secondary">
-                                    <li class="list-unstyled d-flex">
-                                        <img class="img-icon rounded-circle" src="img/avatar_7.jpg" alt="">
-                                        <h6 class="fw-bold ms-2  text-black">Marco P.
-                                            <br><span class="text-black fw-lighter">Ultimo messaggio inviato</span>
-                                        </h6>
-
-                                    </li>
-                                    <hr class="text-secondary">
-                                    <li class="list-unstyled d-flex">
-                                        <img class="img-icon rounded-circle" src="img/avatar_8.jpg" alt="">
-                                        <h6 class="fw-bold ms-2  ">Claudio
-                                            <br><span class="text-black fw-lighter">Ultimo messaggio inviato</span>
-                                        </h6>
-
-                                    </li>
+                                    <img class="img-icon rounded-circle" :src=amici.avatar>
+                                    <h6 class="fw-bold ms-2  text-black">{{amici.name}}
+                                        <br><span class="text-black fw-lighter">Ultimo messaggio inviato</span>
+                                    </h6>
+                                    <span class="text-secondary ms-5">12:00</span>
+                                </div>
 
 
-                                </ul>
+
 
 
 
                             </div>
                         </section>
                     </div>
-                    <div class="border  ">
+                    <!-- 2 SEZIONE -->
+                    <div class="border border-danger  ">
                         <nav class="navbar navbar-expand-lg bg-light">
                             <div class="container-fluid">
                                 <a class="navbar-brand" href="#">
@@ -205,9 +149,13 @@
                         </nav>
                         <div class="main-container">
 
+                            <div class=" text-black text-center"> 
+                              <p class="send-message-green pt-2 ">hai comprato il pane?</p>  
+                            </div>
 
-
-
+                            <div class=" text-black text-center "> 
+                                <p class="send-message-white pt-2 ">si l'ho comprato</p>  
+                              </div>
 
                         </div>
 
@@ -235,7 +183,7 @@
         </div>
 
     </div>
-    </div>
+
     <script src="js/main.js"></script>
 </body>
 

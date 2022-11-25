@@ -10,7 +10,7 @@ const app = createApp({
             contatti: [
                 {
                     name: 'Michele',
-                    avatar: '_1',
+                    avatar: 'img/avatar_1.jpg',
                     visible: true,
                     messages: [{
                       date: '10/01/2020 15:30:55',
@@ -31,7 +31,7 @@ const app = createApp({
                   },
                   {
                     name: 'Fabio',
-                    avatar: '_2',
+                    avatar: 'img/avatar_2.jpg',
                     visible: true,
                     messages: [{
                       date: '20/03/2020 16:30:00',
@@ -52,7 +52,7 @@ const app = createApp({
                   },
                   {
                     name: 'Samuele',
-                    avatar: '_3',
+                    avatar: 'img/avatar_3.jpg',
                     visible: true,
                     messages: [{
                       date: '28/03/2020 10:10:40',
@@ -73,7 +73,7 @@ const app = createApp({
                   },
                   {
                     name: 'Luisa',
-                    avatar: '_4',
+                    avatar: 'img/avatar_6.jpg',
                     visible: true,
                     messages: [{
                       date: '10/01/2020 15:30:55',

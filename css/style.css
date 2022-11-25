@@ -9,16 +9,13 @@ color: white;
 position: absolute;
 top: 10%;
 left: 7%;
-height: 90vh;
+height:90vh;
 
 }
 .img-icon{
     width:50px;
 }
-.mar-neg-sx{
-    margin-left: -2rem;
-    
-}
+
 .mar-neg-dx{
     margin-left:6rem;
     
@@ -59,7 +56,7 @@ height: 90vh;
 
 .insert-message-container {
     background-color: rgb(243,238,234);
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .insert-message-container .icons-container {
     flex-basis: 10%;
@@ -79,13 +76,25 @@ height: 90vh;
     border-radius: 8px;
 }
 
-.area-chat .name-foto-container .icons-container i {
-    font-size: 25px;
-    padding: 0 5px;
-    color: rgb(177,177,177)
-}
-
 .insert-message-container .icons-container i {
     font-size: 25px;
     color: rgb(107,115,117)
+}
+.send-message-green{
+    padding: 0 3rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    border-radius: 8px;
+   width: 250px;
+    height: 50px;
+    background-color: rgb(127, 255, 155);
+}
+.send-message-white{
+    padding: 0 3rem;
+    margin-right: auto;
+    margin-left: 1rem;
+    border-radius: 8px;
+   width: 250px;
+    height: 50px;
+    background-color:white;
 }
