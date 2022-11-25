@@ -1,25 +1,27 @@
-.sec1{
-background-color: rgb(16, 70, 16);
+.sec1 {
+    background-color: rgb(16, 70, 16);
     height: 6rem;
 }
 
-.cont-mess{
-z-index: 1;
-color: white;
-position: absolute;
-top: 10%;
-left: 7%;
-height:90vh;
+.cont-mess {
+    z-index: 1;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    height: 90vh;
 
 }
-.img-icon{
-    width:50px;
+
+.img-icon {
+    width: 50px;
 }
 
-.mar-neg-dx{
-    margin-left:6rem;
-    
+.mar-neg-dx {
+    margin-left: 6rem;
+
 }
+
 .middle-section {
     flex-grow: 1;
     overflow: auto;
@@ -35,6 +37,7 @@ height:90vh;
     height: 70vh;
 
 }
+
 .bottom-navbar {
     color: red;
     display: flex;
@@ -42,22 +45,24 @@ height:90vh;
     flex-shrink: 0;
     height: 80px;
     z-index: 1;
-   overflow: hidden;
-  
- 
+    overflow: hidden;
+
+
 }
-.mar-neg-dx2{
-    margin-left:45rem;
-    
+
+.mar-neg-dx2 {
+    margin-left: 45rem;
+
 }
 
 
 
 
 .insert-message-container {
-    background-color: rgb(243,238,234);
+    background-color: rgb(243, 238, 234);
     padding: 10px 0;
 }
+
 .insert-message-container .icons-container {
     flex-basis: 10%;
     margin: 0 auto;
@@ -66,7 +71,7 @@ height:90vh;
 .insert-message-container .input-container {
     flex-basis: 80%;
     margin: 0 auto;
-  
+
 }
 
 .insert-message-container input {
@@ -78,23 +83,25 @@ height:90vh;
 
 .insert-message-container .icons-container i {
     font-size: 25px;
-    color: rgb(107,115,117)
+    color: rgb(107, 115, 117)
 }
-.send-message-green{
-    padding: 0 3rem;
+
+.send-message-green {
+    padding-left: 1rem;
     margin-left: auto;
     margin-right: 1rem;
     border-radius: 8px;
-   width: 250px;
+    width: 250px;
     height: 50px;
-    background-color: rgb(127, 255, 155);
+    background-color: rgb(168, 253, 187);
 }
-.send-message-white{
-    padding: 0 3rem;
+
+.send-message-white {
+    padding-left: 1rem;
     margin-right: auto;
     margin-left: 1rem;
     border-radius: 8px;
-   width: 250px;
+    width: 250px;
     height: 50px;
-    background-color:white;
+    background-color: white;
 }
