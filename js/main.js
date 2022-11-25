@@ -10,7 +10,7 @@ const app = createApp({
       newMessage: [
         {
           message: "",
-          date: ' 15:30:55',
+          date: "",
         },
       ],
       contatti: [
@@ -114,7 +114,7 @@ const app = createApp({
       this.selectedUserIndex = index;
 
     },
-    inputEnter(selectedUserIndex) {
+    sendAmessage(selectedUserIndex) {
 
       // Messaggio inviato
       this.contatti[selectedUserIndex].messages.push({
@@ -123,15 +123,14 @@ const app = createApp({
         status: 'sent'
       })
       this.newMessage.message = ''
-     
-    },
-    // messageReceivingDelayed(selectedUserIndex) {
-    //   this.contatti[selectedUserIndex].messages.push({
-    //     date: '15:59',
-    //     message: 'Bella madre',
-    //     status: 'received',
-    //   })
-    // }, 150)
+      sendAmessage(() => {
+        this.contatti[selectedUserIndex].messages.push({
+          date: '15:59',
+          message: 'Va Bene',
+          status: 'received',
+        })
+      }, 1500);
+    }
 
   },
 
