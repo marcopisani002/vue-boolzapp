@@ -7,9 +7,11 @@ const app = createApp({
     data() {
 
         return {
+          
             contatti: [
                 {
                     name: 'Michele',
+                    access:'oggi alle 13:15',
                     avatar: 'img/avatar_1.jpg',
                     visible: true,
                     messages: [{
@@ -31,10 +33,11 @@ const app = createApp({
                   },
                   {
                     name: 'Fabio',
+                    access:'10/01/2020 16:15',
                     avatar: 'img/avatar_2.jpg',
                     visible: true,
                     messages: [{
-                      date: '20/03/2020 16:30:00',
+                      date: '  20/03/2020 16:30:00',
                       message: 'Ciao come stai?',
                       status: 'sent'
                     },
@@ -52,6 +55,7 @@ const app = createApp({
                   },
                   {
                     name: 'Samuele',
+                    access:'10/01/2020 20:15',
                     avatar: 'img/avatar_3.jpg',
                     visible: true,
                     messages: [{
@@ -73,6 +77,7 @@ const app = createApp({
                   },
                   {
                     name: 'Luisa',
+                    access:'23/07/2020 06:15',
                     avatar: 'img/avatar_6.jpg',
                     visible: true,
                     messages: [{
@@ -88,18 +93,24 @@ const app = createApp({
                     ],
                   },
             ],
-
+            selectedUser: -1,
 
         };
 
     },
 
     methods: {
-      
+     /* selectChat(index) {
+        console.log('set active');
+        this.selectedUser = index;
+       
+    },*/
 
     },
 
 
-
+    beforeMount () {
+      this.selectedUser = this.contatti[0]
+    }
 
 }).mount('#app');

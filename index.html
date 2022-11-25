@@ -22,168 +22,131 @@
         <section class=" sec1">
 
         </section>
-        <div class="container  ">
+        <main>
 
-            <div class="cont-mess bg-white  ">
-                <!-- sezione 1 lista persone -->
-                <div class="d-flex ">
-                    <div class="border ">
-                        <!-- navbar -->
-                        <nav class="navbar navbar-expand-lg bg-light">
-                            <div class="container-fluid ">
-                                <a class="navbar-brand" href="#">
-                                    <img class="img-icon" src="img/avatar_io.jpg" alt="">
+            <div class="container px-0 main-container ">
+                <!-- SEZIONE SX -->
+                <div class="contact-chat">
+                    <!-- navbar -->
+                    <ul class="nav bg-light py-2">
+                        <li class="nav-item">
 
-                                </a>
+                            <img src="img/avatar_io.jpg " class="img-icon ms-2" alt="">
 
+                        </li>
 
+                        <li class="nav-item ">
+                            <a class="nav-link active text-black fw-bold" aria-current="page" href="#">Sofia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link active  text-secondary" aria-current="page" href="#">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-secondary " aria-current="page" href="#">
+                                <i class="fa-solid fa-message"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-secondary" aria-current="page" href="#">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </li>
+                    </ul>
 
-                                <div class="collapse navbar-collapse" id="navbarText">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item">
-                                            <a class="nav-link active fw-bold" aria-current="page" href="#">Sofia</a>
-                                        </li>
-                                        <li class="nav-item  mar-neg-dx ">
-                                            <a class="nav-link active fw-bold" aria-current="page" href="#">
-                                                <i class="fa-solid fa-rotate-right"></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item ">
-                                            <a class="nav-link active fw-bold" aria-current="page" href="#">
-                                                <i class="fa-solid fa-message"></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active fw-bold" aria-current="page" href="#">
-                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                    <!-- Alert Bell -->
 
+                    <div class="alert alert-info rounded-0 mb-0 d-flex gap-2">
 
-                                </div>
-                            </div>
-                        </nav>
-
-                        <!-- alert section -->
-                        <section class="bg-info">
-                            <div class="d-flex">
-                                <button class="bg-light rounded-circle  mt-3 mb-3 border-0 me-2 ms-2"><i
-                                        class="text-secondary fa-solid fa-bell"></i></button>
-                                <p class="text-center text-black ms-3 me-3">Ricevi notifiche di nuovi messaggi <br>
-                                    <span class="text-secondary"><a href="http://#" class="text-secondary">Attiva le
-                                            notifiche desktop</a> </span>
-                            </div>
-                        </section>
-
-                        <!-- SEARCH chat section  -->
-                        <section class="bg-white">
-                            <form class="d-flex" role="search">
-                                <input class="form-control border-0 " type="search"
-                                    placeholder="cerca o inizia una chat" aria-label="Search">
-                                <button class="btn bg-light  " type="button"><i
-                                        class="fa-solid fa-magnifying-glass"></i></button>
-
-                            </form>
-
-                        </section>
-                        <!-- contact's chat section  -->
-                        <section class=" d-flex flex-column">
-                            <div class=" p-2 middle-section mt-2 " v-for="(amici, index) in contatti">
-
-                                <div class="d-flex mb-3 ">
-
-                                    <img class="img-icon rounded-circle" :src=amici.avatar>
-                                    <h6 class="fw-bold ms-2  text-black">{{amici.name}}
-                                        <br><span class="text-black fw-lighter">Ultimo messaggio inviato</span>
-                                    </h6>
-                                    <span class="text-secondary ms-5">12:00</span>
-                                </div>
-
-
-
-
-
-
-                            </div>
-                        </section>
-                    </div>
-                    <!-- 2 SEZIONE -->
-                    <div class="border border-danger  ">
-                        <nav class="navbar navbar-expand-lg bg-light">
-                            <div class="container-fluid">
-                                <a class="navbar-brand" href="#">
-
-                                    <img class="img-icon rounded-circle" src="img/avatar_1.jpg" alt="">
-
-
-                                </a>
-
-                                <div class="collapse navbar-collapse" id="navbarText">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex ">
-                                        <li class="nav-item">
-                                            <h6 class="fw-bold text-black ms-2 ">Michele
-                                                <br><span class="fw-lighter text-secondary">Ultimo accesso oggi alle
-                                                    12:00</span>
-                                            </h6>
-                                        </li>
-                                        <li class="nav-item  mar-neg-dx2 ">
-                                            <a class="nav-link active text-secondary " aria-current="page" href="#">
-                                                <i class="fa-solid fa-search"></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item ">
-                                            <a class="nav-link active text-secondary " aria-current="page" href="#">
-                                                <i class="fa-sharp fa-solid fa-paperclip "></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item ">
-                                            <a class="nav-link active text-secondary" aria-current="page" href="#">
-                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </nav>
-                        <div class="main-container">
-
-                            <div class=" text-black ">
-                                <p class="send-message-green pt-2  ">hai comprato il pane?</p>
-                            </div>
-
-                            <div class=" text-black  ">
-                                <p class="send-message-white pt-2 ">si l'ho comprato</p>
-                            </div>
-
+                        <div class="avatar ">
+                            <button class="bg-light rounded-circle  mt-3 mb-3 border-0 me-2 ms-2"><i
+                                    class="text-secondary fa-solid fa-bell"></i></button>
                         </div>
 
-                        <div class="insert-message-container d-flex align-items-center">
-                            <div class="icons-container text-center">
-                                <i class="fa-regular fa-face-smile"></i>
+                        <span class="text-secondary"> Ricevi notifiche dei messaggi<a href="http://#"
+                                class="text-secondary"> <br>Attiva le
+                                notifiche desktop</a> </span>
+                    </div>
+                    <!-- SEARCH chat section  -->
+                    <section class="bg-white">
+                        <form class="d-flex pt-2" role="search">
+                            <input class="form-control border-0 " type="search" placeholder="cerca o inizia una chat"
+                                aria-label="Search">
+                            <button class="btn bg-light ps-3 " type="button"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+
+                        </form>
+
+                    </section>
+
+                    <!-- Lista CONTATTI -->
+                    <div class="list-group list-group-flush pt-2 overflow-auto flex-grow-1">
+
+                        <div  class="list-group-item list-group-item-action d-flex gap-2 " v-for="(user, i) in contatti" @click="selectedUser = user">
+                            
+                            <!-- :class="(index == selectedUser) ? 'active' : ''" v-for="(user, index) in contatti" @click=" selectChat(index)" -->
+                            
+                            
+                            
+                            
+                            <img :src="user.avatar" class="img-icon" alt="">
+
+                            <div class="flex-grow-1">
+                                <div>{{user.name}}</div>
+                                <small class="text-black fw-lighter">Ultimo messaggio inviato</small>
                             </div>
-                            <div class="input-container text-center ">
-                                <input type="text" name="" id="" placeholder="Scrivi un messaggio...">
-                            </div>
-                            <div class="icons-container text-center">
-                                <i class="fa-solid fa-microphone"></i>
-                            </div>
+                            <small class="text-black fw-lighter">12:00</small>
+
                         </div>
 
                     </div>
                 </div>
 
+                <!-- SEZIONE DX -->
+                <!-- Box sezione di destra -->
+                <div class="right-column">
+                    <!-- Navbar -->
+                    <ul class="nav bg-light py-2 d-flex">
+                        <li class="nav-item ms-2">
+                            <img :src="selectedUser.avatar" class="img-icon">
+                        </li>
+                        <li class="nav-item">
+                            <h6 class="fw-bold text-black ms-2 ">{{selectedUser.name}}
+                                <br><span class="fw-lighter text-secondary"  >Ultimo accesso: {{selectedUser.access}}</span>
+                            </h6>
+
+                        </li>
+                    </ul>
+
+                    <!-- Box messaggi -->
+                    <div class="p-3 flex-grow-1 chat-container">
+                        <div class="contact-message" :class="(messageObj.status === 'sent') ? 'self-message' : 'contact-message'"
+                            v-for="messageObj in selectedUser.messages">
+                            {{messageObj.message}}
+                        
 
 
+                        </div>
 
-
-
+                    </div>
+                    <!-- Navbar scrivi nuovo messaggio -->
+                    <div class="insert-message-container d-flex align-items-center">
+                        <div class="icons-container text-center">
+                            <i class="fa-regular fa-face-smile"></i>
+                        </div>
+                        <div class="input-container text-center ">
+                            <input type="text" name="" id="" placeholder="Scrivi un messaggio...">
+                        </div>
+                        <div class="icons-container text-center">
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
     </div>
-
+    </main>
+    </div>
     <script src="js/main.js"></script>
 </body>
 

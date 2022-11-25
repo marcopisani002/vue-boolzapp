@@ -1,66 +1,75 @@
-.sec1 {
-    background-color: rgb(16, 70, 16);
-    height: 6rem;
-}
 
-.cont-mess {
-    z-index: 1;
-    color: white;
-    position: absolute;
-    top: 10%;
-    left: 7%;
+:root {
+    --bg-color: linear-gradient(180deg, rgba(0, 150, 136, 1) 0%, rgba(0, 150, 136, 1) 24%, rgba(220, 219, 209, 1) 24%, rgba(218, 225, 225, 1) 60%);
+    
+  }
+
+
+
+  body {
+    background: rgb(0, 150, 136);
+    background: var(--bg-color);
+    height: 100vh;
+  }
+
+
+.main-container {
+    background: white;
     height: 90vh;
-
+    position: relative;
+    top: 5vh;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+    display: flex;
+}
+.contact-chat{
+width: 300px;
+border-right: 1px solid grey;
+flex-shrink: 0;
+display: flex;
+flex-direction: column;
 }
 
 .img-icon {
     width: 50px;
-}
-
-.mar-neg-dx {
-    margin-left: 6rem;
-
-}
-
-.middle-section {
-    flex-grow: 1;
-    overflow: auto;
-    padding-top: 1rem;
-}
-
-.main-container {
-    background-image: url("../img/mine.jpg");
-    width: 100%;
-    flex-grow: 1;
-    overflow: auto;
-    padding-top: 5rem;
-    height: 70vh;
-
-}
-
-.bottom-navbar {
-    color: red;
-    display: flex;
-    justify-content: space-between;
-    flex-shrink: 0;
-    height: 80px;
-    z-index: 1;
+    aspect-ratio: 1/1;
     overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-column {
+ 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .chat-container {
+    background-image: url("../img/mine.jpg");
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: start;
+  }
+.contact-message{
 
-
+    padding: 1rem;
+    background: white;
+    max-width: 60%;
+    min-width: 30%;
+    border-radius: 1rem;
+    
 }
 
-.mar-neg-dx2 {
-    margin-left: 45rem;
-
-}
-
-
-
-
-.insert-message-container {
+.self-message {
+    align-self: flex-end;
+    background:#D5F9BA;
+  }
+  .insert-message-container {
     background-color: rgb(243, 238, 234);
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .insert-message-container .icons-container {
@@ -82,26 +91,6 @@
 }
 
 .insert-message-container .icons-container i {
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(107, 115, 117)
-}
-
-.send-message-green {
-    padding-left: 1rem;
-    margin-left: auto;
-    margin-right: 1rem;
-    border-radius: 8px;
-    width: 250px;
-    height: 50px;
-    background-color: rgb(168, 253, 187);
-}
-
-.send-message-white {
-    padding-left: 1rem;
-    margin-right: auto;
-    margin-left: 1rem;
-    border-radius: 8px;
-    width: 250px;
-    height: 50px;
-    background-color: white;
 }
