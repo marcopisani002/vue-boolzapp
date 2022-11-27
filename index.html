@@ -121,7 +121,7 @@
 
                     <!-- Box messaggi -->
                     <div class="p-3 flex-grow-1 chat-container">
-                        <div class="contact-message" :class="(messageObj.status === 'sent') ? 'self-message' : 'contact-message'"
+                        <div class="contact-message dropdown" :class="(messageObj.status === 'sent') ? 'self-message' : 'contact-message'"
                             v-for="messageObj in contatti[selectedUserIndex].messages">
                             {{messageObj.message}}
                         

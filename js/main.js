@@ -10,7 +10,7 @@ const app = createApp({
       newMessage: [
         {
           message: "",
-          date: "",
+          
         },
       ],
       contatti: [
@@ -118,18 +118,18 @@ const app = createApp({
 
       // Messaggio inviato
       this.contatti[selectedUserIndex].messages.push({
-        date: this.newMessage.date,
+        date: '10/01/2020',
         message: this.newMessage.message,
         status: 'sent'
       })
       this.newMessage.message = ''
-      sendAmessage(() => {
+      setTimeout(() => {
         this.contatti[selectedUserIndex].messages.push({
-          date: '15:59',
-          message: 'Va Bene',
+          date: '10/01/2020' ,
+          message: 'Ok',
           status: 'received',
         })
-      }, 1500);
+      }, 1000);
     }
 
   },
