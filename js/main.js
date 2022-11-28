@@ -10,7 +10,7 @@ const app = createApp({
       newMessage: [
         {
           message: "",
-          
+
         },
       ],
       contatti: [
@@ -125,17 +125,24 @@ const app = createApp({
       this.newMessage.message = ''
       setTimeout(() => {
         this.contatti[selectedUserIndex].messages.push({
-          date: '10/01/2020' ,
+          date: '10/01/2020',
           message: 'Ok',
           status: 'received',
         })
       }, 1000);
-    }
+    },
+    deleteAmessage(selectedUserIndex) {
 
-  },
+      // Messaggio inviato
+      this.contatti[selectedUserIndex].messages.splice({
+        date: '',
+        message: '',
+        status: ''
+      })
+    },
 
 
 
 
-
+  }
 }).mount('#app');
