@@ -103,7 +103,7 @@ const app = createApp({
 
       ],
       selectedUserIndex: 0,
-      selectedUserMessages:0,
+      selectedUserMessages: 0,
 
     };
 
@@ -115,47 +115,29 @@ const app = createApp({
       this.selectedUserIndex = index;
 
     },
-    sendAmessage(selectedUserIndex) {
+    sendAmessage() {
 
       // Messaggio inviato
-      this.contatti[selectedUserIndex].messages.push({
+      this.contatti[this.selectedUserIndex].messages.push({
         date: '10/01/2020',
         message: this.newMessage.message,
         status: 'sent'
       })
       this.newMessage.message = ''
       setTimeout(() => {
-        this.contatti[selectedUserIndex].messages.push({
+        this.contatti[this.selectedUserIndex].messages.push({
           date: '10/01/2020',
           message: 'Ok',
           status: 'received',
         })
       }, 1000);
     },
-    deleteAmessage(selectedUserIndex) {
+    deleteAmessage(indiceMessaggioDaCancellare) {
 
       // Messaggio inviato
-      this.contatti[selectedUserIndex].messages.splice({
-        date: '',
-        message: '',
-        status: ''
-      })
+      this.contatti[this.selectedUserIndex].messages.splice(indiceMessaggioDaCancellare, 1);
     },
-    // selectMessage  (index) {
-      //   console.log('set active');
-      //   this.selectedUserMessages = index;
-  
-      // },
-      // deleteAmessage(selectedUserMessages) {
-  
-      //   // Messaggio inviato
-      //   this.contatti[selectedUserMessages].splice({
-      //     date: '',
-      //     message: '',
-      //     status: ''
-      //   })
-      
-      // },
+
 
 
 

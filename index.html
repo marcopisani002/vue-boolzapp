@@ -28,7 +28,7 @@
             <div class="container px-0 main-container ">
                 <!-- SEZIONE SX -->
                 <div class="contact-chat">
-                    <!-- navbar -->
+
                     <ul class="nav bg-light py-2">
                         <li class="nav-item">
 
@@ -56,7 +56,7 @@
                         </li>
                     </ul>
 
-                    <!-- Alert Bell -->
+
 
                     <div class="alert alert-info rounded-0 mb-0 d-flex gap-2">
 
@@ -69,7 +69,7 @@
                                 class="text-secondary"> <br>Attiva le
                                 notifiche desktop</a> </span>
                     </div>
-                    <!-- SEARCH chat section  -->
+
                     <section class="bg-white">
                         <form class="d-flex pt-2" role="search">
                             <input class="form-control border-0 " type="search" placeholder="cerca o inizia una chat"
@@ -81,7 +81,7 @@
 
                     </section>
 
-                    <!-- Lista CONTATTI -->
+
                     <div class="list-group list-group-flush pt-2 overflow-auto flex-grow-1">
 
                         <div class="list-group-item list-group-item-action d-flex gap-2 "
@@ -107,9 +107,9 @@
                 </div>
 
                 <!-- SEZIONE DX -->
-                <!-- Box sezione di destra -->
+
                 <div class="right-column">
-                    <!-- Navbar -->
+
                     <ul class="nav bg-light py-2 d-flex">
                         <li class="nav-item ms-2">
                             <img :src="contatti[selectedUserIndex].avatar" class="img-icon">
@@ -123,13 +123,13 @@
                         </li>
                     </ul>
 
-                    <!-- Box messaggi -->
+
                     <div class="p-3 flex-grow-1 chat-container">
 
                         <div class="contact-message dropdown "
                             :class="(messageObj.status === 'sent') ? 'self-message' : 'contact-message'"
-                            v-for="messageObj in contatti[selectedUserIndex].messages">
-                            <!-- v-for="deleteObj in contatti[selectedUserMessage].messages" -->
+                            v-for="(messageObj, indiceMessaggio) in contatti[selectedUserIndex].messages">
+
                             <div class="d-flex justify-content-between ">
 
 
@@ -142,8 +142,8 @@
 
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-light">
-                                        <!-- {{deleteObj.message}} @click="selectMessage(selectedUserMessage)" -->
-                                        <li><a class="dropdown-item " @click="deleteAmessage(selectedUserIndex)">&#8520
+
+                                        <li><a class="dropdown-item " @click="deleteAmessage(indiceMessaggio)">&#8520
                                                 Info Messaggio</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
@@ -167,15 +167,14 @@
                         </div>
 
                     </div>
-                    <!-- Navbar scrivi nuovo messaggio -->
+
                     <div class="insert-message-container d-flex align-items-center">
                         <div class="icons-container text-center">
                             <i class="fa-regular fa-face-smile"></i>
                         </div>
                         <div class="input-container text-center ">
                             <input v-model="newMessage.message" type="text" name="" id=""
-                                placeholder="Scrivi un messaggio..."
-                                v-on:keyup.enter="sendAmessage(selectedUserIndex)  ">
+                                placeholder="Scrivi un messaggio..." v-on:keyup.enter="sendAmessage()  ">
                         </div>
                         <div class="icons-container text-center ">
                             <i class="fa-solid fa-microphone"></i>
