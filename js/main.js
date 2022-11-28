@@ -103,7 +103,7 @@ const app = createApp({
 
       ],
       selectedUserIndex: 0,
-      selectedUserMessages: 0,
+      
 
     };
 
@@ -134,7 +134,7 @@ const app = createApp({
     },
     deleteAmessage(indiceMessaggioDaCancellare) {
 
-      // Messaggio inviato
+     
       this.contatti[this.selectedUserIndex].messages.splice(indiceMessaggioDaCancellare, 1);
     },
 

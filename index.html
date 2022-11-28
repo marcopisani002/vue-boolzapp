@@ -143,16 +143,16 @@
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-light">
 
-                                        <li><a class="dropdown-item " @click="deleteAmessage(indiceMessaggio)">&#8520
+                                        <li><a class="dropdown-item " >&#8520
                                                 Info Messaggio</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item text-warning">&#9746 Elimina per Me</a></li>
+                                        <li><a class="dropdown-item text-warning" @click="deleteAmessage(indiceMessaggio)">&#9746 Elimina per Me</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item text-danger">&#9746 Elimina per Tutti</a></li>
+                                        <li><a class="dropdown-item text-danger" @click="deleteAmessage(indiceMessaggio)">&#9746 Elimina per Tutti</a></li>
 
 
 
