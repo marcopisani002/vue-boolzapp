@@ -125,31 +125,41 @@
 
                     <!-- Box messaggi -->
                     <div class="p-3 flex-grow-1 chat-container">
-                        <div class="contact-message dropdown"
+
+                        <div class="contact-message dropdown "
                             :class="(messageObj.status === 'sent') ? 'self-message' : 'contact-message'"
                             v-for="messageObj in contatti[selectedUserIndex].messages">
-                            <div class="dropdown text-end ">
-                                <button class="btn btn-secondary dropdown-toggle bg-transparent border-0 text-secondary" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                  
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-light">
-                                    <li><a class="dropdown-item "@click="deleteAmessage(selectedUserIndex)">&#8520 Info Messaggio</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item text-warning" >&#9746 Elimina per Me</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item text-danger"  >&#9746 Elimina per Tutti</a></li>
-                                   
-                                    
-                                    
-                                </ul>
+                            <!-- v-for="deleteObj in contatti[selectedUserMessage].messages" -->
+                            <div class="d-flex justify-content-between ">
+
+
+                                {{messageObj.message}}
+
+                                <div class="dropdown  ">
+                                    <button
+                                        class="btn btn-secondary dropdown-toggle bg-transparent border-0 text-secondary"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-light">
+                                        <!-- {{deleteObj.message}} @click="selectMessage(selectedUserMessage)" -->
+                                        <li><a class="dropdown-item " @click="deleteAmessage(selectedUserIndex)">&#8520
+                                                Info Messaggio</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item text-warning">&#9746 Elimina per Me</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item text-danger">&#9746 Elimina per Tutti</a></li>
+
+
+
+                                    </ul>
+                                </div>
                             </div>
-                            {{messageObj.message}}
-                           
+
                             <div class="time-container">
                                 <small class="fw-lighter text-secondary">{{messageObj.date}}</small>
                             </div>

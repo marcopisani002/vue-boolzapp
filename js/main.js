@@ -103,6 +103,7 @@ const app = createApp({
 
       ],
       selectedUserIndex: 0,
+      selectedUserMessages:0,
 
     };
 
@@ -140,7 +141,21 @@ const app = createApp({
         status: ''
       })
     },
-
+    // selectMessage  (index) {
+      //   console.log('set active');
+      //   this.selectedUserMessages = index;
+  
+      // },
+      // deleteAmessage(selectedUserMessages) {
+  
+      //   // Messaggio inviato
+      //   this.contatti[selectedUserMessages].splice({
+      //     date: '',
+      //     message: '',
+      //     status: ''
+      //   })
+      
+      // },
 
 
 
